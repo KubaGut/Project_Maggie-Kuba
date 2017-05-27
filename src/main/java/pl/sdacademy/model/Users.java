@@ -2,9 +2,7 @@ package pl.sdacademy.model;
 
 import java.util.ArrayList;
 
-/**
- * Created by RENT on 2017-05-27.
- */
+
 public class Users {
         private int ID;
         private String login;

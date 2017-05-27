@@ -12,7 +12,6 @@ public class Actors {
     private String birthDate;
     private String placeOfBirth;
     private String deathDate;
-    private ArrayList<Movies> movies;
 
 
     public Actors(int ID,
@@ -20,15 +19,13 @@ public class Actors {
                   String lastname,
                   String birthDate,
                   String placeOfBirth,
-                  String deathDate,
-                  ArrayList<Movies> movies) {
+                  String deathDate) {
         this.ID = ID;
         this.name = name;
         this.lastname = lastname;
         this.birthDate = birthDate;
         this.placeOfBirth = placeOfBirth;
         this.deathDate = deathDate;
-        this.movies = movies;
     }
 
     public int getID() {
@@ -79,11 +76,4 @@ public class Actors {
         this.deathDate = deathDate;
     }
 
-    public ArrayList<Movies> getMovies() {
-        return movies;
-    }
-
-    public void setMovies(ArrayList<Movies> movies) {
-        this.movies = movies;
-    }
 }

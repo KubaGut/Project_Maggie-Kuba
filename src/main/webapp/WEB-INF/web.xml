@@ -19,12 +19,42 @@
 
     <servlet>
         <servlet-name>UserServlet</servlet-name>
-        <servlet-class>pl.sdaacademy.UserServlet</servlet-class>
+        <servlet-class>pl.sdacademy.UserServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>UserServlet</servlet-name>
         <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>User</servlet-name>
+        <jsp-file>/user.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>User</servlet-name>
+        <url-pattern>/user.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddMovieTemplate</servlet-name>
+        <jsp-file>/addMovie.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddMovieTemplate</servlet-name>
+        <url-pattern>/addMovie</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addMovieServlet</servlet-name>
+        <servlet-class>pl.sdacademy.AddMovieServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addMovieServlet</servlet-name>
+        <url-pattern>/addUser</url-pattern>
     </servlet-mapping>
 
 </web-app>

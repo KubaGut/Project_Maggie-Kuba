@@ -6,7 +6,7 @@
   </head>
   <body>
 
-   <a href="login"> ZALOGUJ </a>
+   <a href="login"> LOG IN </a>
 
 
   </body>
