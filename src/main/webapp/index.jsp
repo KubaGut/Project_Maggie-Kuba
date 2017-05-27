@@ -6,7 +6,7 @@
   </head>
   <body>
 
-   <a href="/uzytkownik"> ZALOGUJ </a>
+   <a href="login"> ZALOGUJ </a>
 
 
   </body>
