@@ -1,71 +1,57 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <html>
   <head>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
     <title>MOVIES</title>
 <style>
-    body{
-        background-color: rgb(229,229,200);
-        }
-    h1{
-        color:green;
-        text-align:center;
-        font-style:italic;
-        }
-    img{
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        padding: 15px;
-        width:200px;
-        position:relative;
-    }
-    table{
-        width:80%;
-    }
-    tr.imgActors{
-        float:left;
-        width: 100px%;
-        height:auto;
-       }
-     tr.imgMovies{
-            float:left;
-            width: 100px;
-            height:auto;
+
 
     </style>
   </head>
 
-  <body>
-
-  <h1>Welcome to the best MOVIES web ever !</h1>
-
-
-    <p align="right"><a href="login"> ZALOGUJ </a></p>
-
-    <table align="center">
-    <tr>
+<body>
+    <div id="container">
+        <div id="welcome">Welcome to the best Movie's web</div>
+        <div id="menu">
+            <ol>
+            <li><a href="login">Login</a></li>
+            <li><a href=""> My accout</a></li>
+            <li><a href=""> Actors</a></li>
+            <li><a href="">Movies</a></li>
+            <li><a href=""> About</a></li>
+            </ol>
+        </div>
+        <div id="actors">
+        <table align="center">
+        <tr>
         <th align="left">ACTORS</th>
-    </tr>
-    <tr class="imgActors">
+        </tr>
+        <tr class="imgActors">
         <td><img id="kirk" src="img/actors/Douglas.jpg" alt="Kirk Douglas" /></td>
         <td><img src="img/actors/Hepburn.jpg" alt="Audrey Hepburn" /></td>
         <td><img src="img/actors/Brando.jpg" alt="Marlon Brando" /></td>
         <td><img src="img/actors/Monroe.jpg" alt="Marilyn Monroe" /></td>
         <td><img src="img/actors/Gable.jpg" alt="Clark Gable" /></td>
-    </tr>
-    </table>
+        </tr>
+        </table>
+        </div>
 
-    <table align="center">
-    <tr>
+        <div id="movies">
+            <table align="center">
+        <tr>
         <th align="left">MOVIES</th>
-    </tr>
-    <tr class="imgMovies">
+        </tr>
+        <tr class="imgMovies">
         <td><img src="img/movies/Breakfast at Tiffany's.jpg" alt="Kirk Douglas" /></td>
         <td><img src="img/movies/Champion.jpg" alt="Audrey Hepburn" /></td>
         <td><img src="img/movies/The Godfather.jpg" alt="Marlon Brando" /></td>
         <td><img src="img/movies/The Misfits.jpg" alt="Marilyn Monroe" /></td>
-    </tr>
-    </table>
+        </tr>
+        </table>
+        </div>
+
+    <div id="check">
     <button onclick="displayDate()">Try it</button>
 
     <script>
@@ -78,8 +64,36 @@
     document.getElementById("kirk").innerHTML = Date();
      }
     </script>
+<script scr="jquery-3.2.1.min"></script>
+	
+<script>
+
+	$(document).ready(function() {
+	var NavY = $('#menu').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('#menu').addClass('sticky');
+	} else {
+		$('#menu').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+
+    </div>
+    <div id="footer">Thanks for being with us !  @All rights reserved </div>
+    </div>
 
 
-
-  </body>
+</body>
 </html>
