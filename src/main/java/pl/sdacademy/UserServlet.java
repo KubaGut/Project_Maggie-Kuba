@@ -11,9 +11,11 @@ import java.io.IOException;
 public class UserServlet extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws SecurityException, IOException, ServletException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+            throws SecurityException, IOException, ServletException {
         resp.setContentType("text/html");
 
-        req.getParameter()
+        // req.getParameter();
         HttpSession session = req.getSession(true); // jezelie sesji nie ma to ja tworzy (true) {
+    }
 }
