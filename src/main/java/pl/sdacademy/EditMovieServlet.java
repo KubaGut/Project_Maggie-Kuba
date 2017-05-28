@@ -1,6 +1,5 @@
 package pl.sdacademy;
 
-
 import pl.sdacademy.model.Database;
 import pl.sdacademy.model.Users;
 
@@ -12,7 +11,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
-public class AddMovieServlet extends HttpServlet {
+public class EditMovieServlet  extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -21,13 +20,15 @@ public class AddMovieServlet extends HttpServlet {
 
         HttpSession session = req.getSession(true);
         Database baza = (Database) session.getAttribute("baza");
-        baza.addMovie(req.getParameter("title"),req.getParameter("directorName"),req.getParameter("directorLastName"),
+        baza.editMovie(req.getParameter("title"),req.getParameter("directorName"),req.getParameter("directorLastName"),
                 req.getParameter("premieraDate"),req.getParameter("category"),req.getParameter("place"),
                 req.getParameter("actorName"),req.getParameter("actorLastName"),req.getParameter("actorDateOfBirth"),
-                req.getParameter("actorPlaceOfBirth"),req.getParameter("actorDeathPlace"),(Users) session.getAttribute("user"));
+                req.getParameter("actorPlaceOfBirth"),req.getParameter("actorDeathPlace"),(Users) session.getAttribute("user"),
+                Integer.parseInt(req.getParameter("MovieNumber")));
 
         session.setAttribute("user", baza.getUsers().get(baza.getUsers().indexOf(session.getAttribute("user"))));
         req.getRequestDispatcher("/user.jsp").forward(req, resp);
 
     }
 }
+

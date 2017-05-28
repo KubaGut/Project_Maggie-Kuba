@@ -65,6 +65,46 @@
         <url-pattern>/addUser</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>DeleteMovieTemplate</servlet-name>
+        <jsp-file>/deleteMovie.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteMovieTemplate</servlet-name>
+        <url-pattern>/deleteMovie</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>movieDeletedServlet</servlet-name>
+        <servlet-class>pl.sdacademy.MovieDeletedServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>movieDeletedServlet</servlet-name>
+        <url-pattern>/movieDeleted</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditeMovieTemplate</servlet-name>
+        <jsp-file>/editMovie.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EditeMovieTemplate</servlet-name>
+        <url-pattern>/editMovie</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>editMovieServlet</servlet-name>
+        <servlet-class>pl.sdacademy.EditMovieServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>editMovieServlet</servlet-name>
+        <url-pattern>/editMovieServlet</url-pattern>
+    </servlet-mapping>
+
 
 
 </web-app>

@@ -29,6 +29,10 @@
      </div>
 
      <a href="addMovie"> ADD MOVIE </a>
+     <br />
+     <a href="deleteMovie"> DELETE MOVIE </a>
+     <br />
+     <a href="editMovie"> EDIT MOVIE </a>
 
 
   </body>

@@ -1,3 +1,4 @@
+
 package pl.sdacademy.model;
 
 import java.util.ArrayList;
@@ -68,9 +69,9 @@ public class Database {
         users.add(gosia);
 
     }
-     public void addMovie(String title, String directorName, String directorLastName, String premiraDate, String category,
-                        String place, String actorName, String actorLastName, String actorDateOfBirth,
-                          String actorPlaceOfBirth, String actorDeathPlace, Users user){
+    public void addMovie(String title, String directorName, String directorLastName, String premiraDate, String category,
+                         String place, String actorName, String actorLastName, String actorDateOfBirth,
+                         String actorPlaceOfBirth, String actorDeathPlace, Users user){
         ArrayList<Actors> actor = new ArrayList<Actors>();
         actor.add(new Actors(0, actorName, actorLastName, actorDateOfBirth, actorPlaceOfBirth,
                 actorDeathPlace));
@@ -80,4 +81,21 @@ public class Database {
         users.get(users.indexOf(user)).getFavouriteMovies().add(movie);
 
     }
+    public void deleteMovie(int titleNumber, Users user){
+        users.get(users.indexOf(user)).getFavouriteMovies().remove(titleNumber);
+    }
+    public void editMovie(String title, String directorName, String directorLastName, String premiraDate, String category,
+                         String place, String actorName, String actorLastName, String actorDateOfBirth,
+                         String actorPlaceOfBirth, String actorDeathPlace, Users user, int i){
+        ArrayList<Actors> actor = new ArrayList<Actors>();
+        actor.add(new Actors(0, actorName, actorLastName, actorDateOfBirth, actorPlaceOfBirth,
+                actorDeathPlace));
+        Movies movie = new Movies(getUsers().size(),title, directorName, directorLastName, premiraDate,category,
+                place, actor );
+
+        users.get(users.indexOf(user)).getFavouriteMovies().remove(i);
+        users.get(users.indexOf(user)).getFavouriteMovies().add(i, movie);
+
+    }
 }
+
