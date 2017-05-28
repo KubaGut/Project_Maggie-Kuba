@@ -46,7 +46,15 @@
         <servlet-name>AddMovieTemplate</servlet-name>
         <url-pattern>/addMovie</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>MyAccount</servlet-name>
+        <jsp-file>/newIndex.jsp</jsp-file>
+    </servlet>
 
+    <servlet-mapping>
+        <servlet-name>MyAccount</servlet-name>
+        <url-pattern>/myaccount</url-pattern>
+    </servlet-mapping>
     <servlet>
         <servlet-name>addMovieServlet</servlet-name>
         <servlet-class>pl.sdacademy.AddMovieServlet</servlet-class>
@@ -56,6 +64,8 @@
         <servlet-name>addMovieServlet</servlet-name>
         <url-pattern>/addUser</url-pattern>
     </servlet-mapping>
+
+
 
 </web-app>
 

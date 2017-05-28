@@ -19,46 +19,8 @@ body{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-#menu{
-    width:100%;
-    background-color: rgb(255, 255, 204);
-    margin-top: 20px;
-    color:white;
-    padding: 10px 0;
-    text-align: center;
-    border-top:1px solid rgb(85, 43, 43);
-    border-bottom:1px solid rgb(85, 43, 43);
-}
-ol{
-    padding:0;
-    margin:0;
-    list-style-type: none;
-    font-size:18px;
-    height: 30px;
-    line-height:200%; 
-    display: inline-block;
-}
-ol a{
-    color:black;
-    text-decoration: none;
-    display: block;
-}
-ol > li{
-    float:left;
-    width:150px;
-    height: 40px;
-    border-right: 1px dotted rgb(85, 43, 43);
-}
-ol > li:first-child{
-    border-left: 1px dotted rgb(85, 43, 43);
-}
-ol > li:hover{
-    background-color:rgb(204, 204, 0);
-    cursor: pointer;
-}
-ol > li:hover > a{
-    color:rgb(85, 43, 43);
-}
+
+
 
 .sticky{
     width:100%;
@@ -85,7 +47,7 @@ ol > li:hover > a{
     padding: 20px;
     font-size: 14px;
 }
-.option{
+/*.option{
     float:left;
     min-width: 50px;
     height: 25px;
@@ -100,7 +62,7 @@ ol > li:hover > a{
     background-color:rgb(204, 204, 0);
     cursor: pointer;
 }
-
+*/
 /* Unvisited link 
 a:link{
 color:yellow;
@@ -118,11 +80,52 @@ color:red;
 img{
     border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 15px;
+    padding: 20px;
     width:200px;
-    position:relative;
 }
-img:hover{
+td.columnAct{
+    position: relative;
+    width:200px;
+}
+td.columnAct .description{
+    position:absolute;
+    display:block;
+    background-color: rgb(255, 255, 230);
+    color:rgb(15, 15, 10);
+    opacity:0;
+    transition: opacity 0.5s ease-in-out;
+    height:80%;
+    width: 100%;
+    top:20px;
+    left:0px;
+    border-radius: 4px;
+}
+td.columnAct:hover .description{
+    opacity:0.6;
+    cursor: pointer;
+}
+td.columnMovies{
+    position: relative;
+    width:200px;
+}
+td.columnMovies .description{
+    position:absolute;
+    display:block;
+    background-color: rgb(235, 217, 198);
+    color:rgb(15, 15, 10);
+    opacity:0;
+    transition: opacity 0.5s ease-in-out;
+    height:80%;
+    width: 100%;
+    top:20px;
+    left:0px;
+    border-radius: 4px;
+}
+td.columnMovies:hover .description{
+    opacity:0.7;
+    cursor: pointer;
+}
+/*img:hover{
     opacity: 0.5;
     cursor: pointer;
 }
@@ -138,4 +141,33 @@ tr.imgMovies{
     float:left;
     width: 120px;
     height:auto;
+}
+*/
+div#actorsNew{
+	display: inline-block;
+	width: 120px;
+	text-align: center;
+	padding: 5px;
+}
+#actorsNew .photo .act{
+    float:left;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    width:200px;
+    position:relative;
+}
+
+.photo .description{
+    position:absolute;
+    display:block;
+    background-color: #111;
+    left:0px;
+    top:0px;
+    opacity:0;
+    transition: opacity 0.5s ease-in-out;
+}
+.photo:hover .description{
+    opacity:0.8;
+    cursor: pointer;
 }

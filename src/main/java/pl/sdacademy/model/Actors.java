@@ -76,4 +76,12 @@ public class Actors {
         this.deathDate = deathDate;
     }
 
+    @Override
+    public String toString() {
+        return "Name: " + name + '\n' +
+                "Lastname: " + lastname + '\n' +
+                "Date of birth: " + birthDate + '\n' +
+                "Place od birth: " + placeOfBirth + '\n' +
+                "Date of death: " + deathDate + '\n';
+    }
 }

@@ -101,4 +101,15 @@ public class Movies {
     public void setActors(ArrayList<Actors> actors) {
         this.actors = actors;
     }
+
+    @Override
+    public String toString() {
+        return
+                "Title: " + title + '\n' +
+                "Director: " + directorName + ' '+ directorLastname + '\n' +
+                "Movie release: " + premiereDate + '\n' +
+                "Category: " + category + '\n' +
+                "Production place: " + place + '\'' +
+                "Actors: " + actors;
+    }
 }
