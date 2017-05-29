@@ -36,20 +36,7 @@
     cursor: pointer;
 }
 */
-/* Unvisited link 
-a:link{
-color:yellow;
-}
 
- Visited link 
-a:visited{
-color:yellow;
-}
- Cursor 
-a:hover{
-color:red;
-}
-*/
 img{
     border: 1px solid #ddd;
     border-radius: 4px;

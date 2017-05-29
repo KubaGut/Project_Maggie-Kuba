@@ -20,7 +20,7 @@
     
       <div id="menu">
                 <ol>
-                <li><a href="/Project_Maggie_Kuba/index2">Home</a></li>
+                <li><a href="/Project_Maggie_Kuba/">Home</a></li>
                 <li><a href="#">My accout</a></li>
                 <li><a href="#">Actors</a>
                     <ul>
@@ -41,30 +41,23 @@
                 </ol>
             </div>
 
-    <div id="favActors">Favourite Actors
+    <div id="favActors">Favourite Actors<br />
         <% for(Actors p : user.getFavouriteActors()){
-          String name = p.getName(); %>
-          <div class="favActors"><%=name%></div>
-         <% } %>
+          String name = p.getName();
+          String surname =p.getLastname(); %>
+          <div class="favActors"><%=name %><br /><%=surname%></div>
+         <% } %><br style="clear:both"/>
      </div>
      </div>
-    <div> YOUR ADDED MOVIES
-    <% for(Movies p : user.getFavouriteMovies()){
-      String title = p.getTitle(); %>
-      <div> TITLE:  <%=title%> </div>
-     <% } %>
+    <div id="favMovies">Favourite Movies
+        <a class="linkButton" href="addMovie">ADD MOVIE</a>
+        <a class="linkButton" href="deleteMovie">DELETE MOVIE</a>
+        <a class="linkButton" href="editMovie">EDIT MOVIE</a>
+        <br />
+        <% for(Movies p : user.getFavouriteMovies()){
+        String title = p.getTitle(); %>
+        <div class="favMovies"> <%=title%> </div>
+        <% } %> <br style="clear:both"/>
     </div>
-    <br />
-    
-
-     <a href="addMovie"> ADD MOVIE </a>
-     <br />
-     <a href="deleteMovie"> DELETE MOVIE </a>
-     <br />
-     <a href="editMovie"> EDIT MOVIE </a>
-
-
-  </body>
-
-
+    </body>
 </html>

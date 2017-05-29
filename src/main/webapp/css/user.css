@@ -1,12 +1,78 @@
-#container #favActors{
+#favActors{
+    font-size: 30px;
+    margin:10px;
     color:white;
-    border-style: groove;
+    border-style: inset;
     border-radius: 7px;
     border-width: 2px;
     position: relative;
+    text-align: left;
+    letter-spacing: 2px;
+    padding:10px;
+    font-weight: bold;
+
 }
-#container #favActors .favActors{
+#favActors .favActors{
+    margin:10px;
     border-style: groove;
     border-radius: 7px;
+    border-width: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    height:170px;
+    width:20%;
+    padding: 10px;
+    text-shadow: 2px 2px 1px rgb(85, 43, 43);
+    box-shadow:5px 5px 5px black;
+    font-size: 25px;
+    float:left;
+}
+#favMovies{
+    font-size: 30px;
+    clear: left;
+    margin:10px;
+    color:white;
+    border-style: inset;
+    border-radius: 7px;
     border-width: 2px;
-    }
+    position: relative;
+    text-align: left;
+    letter-spacing: 2px;
+    padding:10px;
+    font-weight: bold;
+}
+#favMovies .favMovies{
+    float:left;
+    margin:10px;
+    border-style: groove;
+    border-radius: 7px;
+    border-width: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    height:170px;
+    width:20%;
+    padding: 10px;
+    text-shadow: 2px 2px 1px rgb(85, 43, 43);
+    box-shadow:5px 5px 5px black;
+    font-size: 25px;
+}
+
+#favMovies a:link.linkButton{
+    color: rgb(255, 255, 179);
+    font-size:20px;
+    padding-right: 10px;
+    border-radius: 7px;
+}
+#favMovies a:visited.linkButton{
+    color:rgb(255, 255, 179);
+    font-size:20px;
+    padding-right: 10px;
+    border-radius: 7px;
+}
+ 
+#favMovies a:hover.linkButton{
+    color:rgb(85, 43, 43);
+    font-size:20px;
+    padding-right: 10px;
+    border-radius: 7px;
+}

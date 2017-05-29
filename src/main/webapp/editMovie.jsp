@@ -6,28 +6,53 @@
 
 <html>
   <head>
+    <link rel="stylesheet" href="css/home.css" type="text/css" />
+    <link rel="stylesheet" href="css/menu.css" type="text/css" />
+    <link rel="stylesheet" href="css/edit.css" type="text/css" />
   </head>
 
   <body>
     <% Users user = (Users) session.getAttribute("user");
        String login = user != null ? user.getLogin() : "Not logged";
     %>
-    <div> EDIT  </div>
+    <div id="welcome">MODIFY MOVIE</div>
+    <div id="menu">
+                <ol>
+                <li><a href="/Project_Maggie_Kuba/">Home</a></li>
+                <li><a href="#">My accout</a></li>
+                <li><a href="#">Actors</a>
+                    <ul>
+                        <li><a href="#">Kirk Douglas</a></li>
+                        <li><a href="#">Audrey Hepburn</a></li>
+                        <li><a href="#">Marlon Brando</a></li>
+                        <li><a href="#">Marilyn Monroe</a></li>
+                        <li><a href="#">Clark Gable</a></li>
+                    </ul></li>
+                <li><a href="#">Movies</a>
+                    <ul>
+                        <li><a href="#">Breakfast at Tiffany's </a></li>
+                        <li><a href="#">Champion</a></li>
+                        <li><a href="#">The Godfather</a></li>
+                        <li><a href="#">The Misfits</a></li>
+                    </ul></li>
+                <li><a href="">About</a></li>
+                </ol>
+            </div>
     <br />
-    <div> YOUR MOVIES
+  
+    <div id="editMovie"> YOUR MOVIES
      <% int i = 0;
         for(Movies p : user.getFavouriteMovies()){
         String title = p.getTitle();
         i++;%>
-        <div> TITLE: <%=i%> <%=title%> </div>
+        <div> <%=i%> <%=title%> </div>
      <% } %>
-    </div>
     <div> CHOOSE TITLE NUMBER YOU WANT TO EDIT </div>
-
+    </div>
         <form type="post" action="editMovie">
         <div> Title Number: <input type="tekst" name="titleNumber" value"" /> </div>
 
-        <div> <input type="submit" value="EDIT" /> </div>
+        <div> <input class="button" type="submit" value="EDIT" /> </div>
         </form>
 
          <% if (request.getParameter("titleNumber") != null) {
@@ -48,7 +73,7 @@
             <div> Actor Death Place: <input type="tekst" name="actorDeathPlace" value="" /> </div>
 
           <% } %>
-          <div> <input type="submit" value="SUBMIT" /> </div>
+          <div> <input class="button" type="submit" value="SUBMIT" /> </div>
                       </form>
 
   </body>
