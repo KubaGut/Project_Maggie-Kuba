@@ -43,7 +43,9 @@
     <div style="text-align:center;color:red;"> Wrong login or password!!  <br />
      Please, try again. </div>
     <% } %>
-
+<div>
+        <div id="footer">Thanks for being with us !  @All rights reserved </div>
+    </div>
   </body>
 
 

@@ -49,7 +49,9 @@
         <div> <input type="submit" value="ADD" /> </div>
       </form>
     </div>
-
+<div>
+        <div id="footer">Thanks for being with us !  @All rights reserved </div>
+    </div>
   </body>
 
 

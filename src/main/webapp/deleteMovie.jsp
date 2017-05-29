@@ -56,7 +56,9 @@
         <div> Title Number: <input type="tekst" name="titleNumber" value"" /> </div>
 
         <div> <input type="submit" value="DELETE" /> </div>
-
+<div>
+        <div id="footer">Thanks for being with us !  @All rights reserved </div>
+    </div>
 
   </body>
 

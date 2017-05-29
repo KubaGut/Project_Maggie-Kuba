@@ -75,7 +75,9 @@
           <% } %>
           <div> <input type="submit" value="SUBMIT" /> </div>
                       </form>
-
+        <div>
+        <div id="footer">Thanks for being with us !  @All rights reserved </div>
+    </div>
   </body>
 
 

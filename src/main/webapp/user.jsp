@@ -59,5 +59,8 @@
         <div class="favMovies"> <%=title%> </div>
         <% } %> <br style="clear:both"/>
     </div>
+    <div>
+        <div id="footer">Thanks for being with us !  @All rights reserved </div>
+    </div>
     </body>
 </html>
