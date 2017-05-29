@@ -46,7 +46,7 @@
         <div> Actor Date of Birth: <input type="tekst" name="actorDateOfBirth" value"" /> </div>
         <div> Actor Plate of Birth: <input type="tekst" name="actorPlaceOfBirth" value"" /> </div>
         <div> Actor Death Place: <input type="tekst" name="actorDeathPlace" value"" /> </div>
-        <div> <input class="button" type="submit" value="ADD" /> </div>
+        <div> <input type="submit" value="ADD" /> </div>
       </form>
     </div>
 

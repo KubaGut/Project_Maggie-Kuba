@@ -55,7 +55,7 @@
         <form type="post" action="movieDeleted">
         <div> Title Number: <input type="tekst" name="titleNumber" value"" /> </div>
 
-        <div> <input class="button" type="submit" value="DELETE" /> </div>
+        <div> <input type="submit" value="DELETE" /> </div>
 
 
   </body>
