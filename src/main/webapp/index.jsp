@@ -1,31 +1,47 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="pl.sdacademy.model.Database" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="pl.sdacademy.model.Users" %>
+<%@ page import="pl.sdacademy.model.Movies" %>
+<%@ page import="pl.sdacademy.model.Actors" %>
+
+
 <html>
-  <head>
-    <link rel="stylesheet" href="css/menu.css" type="text/css" />
-    <link rel="stylesheet" href="css/style.css" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
-    <title>MOVIES</title>
-<style>
+    <head>
+        <link rel="stylesheet" href="css/home.css" type="text/css" />
+        <link rel="stylesheet" href="css/menu.css" type="text/css" />
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+   <!-- <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet"> -->
+        <title>MOVIES</title>
+    </head>
 
-
-    </style>
-  </head>
-
-<body>
+    <body>
     <div id="container">
         <div id="welcome">Welcome to the best Movie's web</div>
         <div id="menu">
             <ol>
             <li><a href="/Project_Maggie_Kuba/">Home</a></li>
             <li><a href="login">Login</a></li>
-            <li><a href="">My accout</a></li>
-            <li><a href="">Actors</a></li>
-            <li><a href="">Movies</a></li>
+            <li><a href="#">My accout</a></li>
+            <li><a href="#">Actors</a>
+                <ul>
+                    <li><a href="#">Kirk Douglas</a></li>
+                    <li><a href="#">Audrey Hepburn</a></li>
+                    <li><a href="#">Marlon Brando</a></li>
+                    <li><a href="#">Marilyn Monroe</a></li>
+                    <li><a href="#">Clark Gable</a></li>
+                </ul></li>
+            <li><a href="#">Movies</a>
+                <ul>
+                    <li><a href="#">Breakfast at Tiffany's </a></li>
+                    <li><a href="#">Champion</a></li>
+                    <li><a href="#">The Godfather</a></li>
+                    <li><a href="#">The Misfits</a></li>
+                </ul></li>
             <li><a href="">About</a></li>
             </ol>
         </div>
         <div id="actors">
-       
         <table align="center">
             <tr>
                 <th align="left">ACTORS</th>
@@ -33,7 +49,7 @@
             <tr class="imgActors">
                 <td class="columnAct">
                     <img id="kirk" src="img/actors/Douglas.jpg" alt="Kirk Douglas" />
-                    <div class="description">AAAAAA</div>
+                    <div class="description"><% out.println("movie1"); %></div>
                 </td>
                 <td class="columnAct">
                     <img src="img/actors/Hepburn.jpg" alt="Audrey Hepburn" />
@@ -80,8 +96,7 @@
                 </tr>
             </table>
         </div>
-
-    <div id="check">
+    <!--<div id="check">
     <button onclick="displayDate()">Try it</button>
 
     <script>
@@ -117,13 +132,10 @@
 		stickyNav();
 	});
 	});
-	
-</script>
-
+</script>-->
+    <div>
+        <div id="footer">Thanks for being with us !  @All rights reserved </div>
     </div>
-    <div id="footer">Thanks for being with us !  @All rights reserved </div>
     </div>
-
-
-</body>
+    </body>
 </html>

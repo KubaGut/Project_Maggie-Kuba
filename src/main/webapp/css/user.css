@@ -1,0 +1,12 @@
+#container #favActors{
+    color:white;
+    border-style: groove;
+    border-radius: 7px;
+    border-width: 2px;
+    position: relative;
+}
+#container #favActors .favActors{
+    border-style: groove;
+    border-radius: 7px;
+    border-width: 2px;
+    }

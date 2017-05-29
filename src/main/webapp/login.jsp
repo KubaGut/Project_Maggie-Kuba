@@ -8,16 +8,29 @@
   </head>
 
   <body>
-    <div id="menu">
-        <ol>
-            <li><a href="/Project_Maggie_Kuba/">Home</a></li>
-            <li><a href="login">Login</a></li>
-            <li><a href="">My accout</a></li>
-            <li><a href="">Actors</a></li>
-            <li><a href="">Movies</a></li>
-            <li><a href="">About</a></li>
-            </ol>
-    </div>
+     <div id="menu">
+                <ol>
+                <li><a href="/Project_Maggie_Kuba/">Home</a></li>
+                <li><a href="login">Login</a></li>
+                <li><a href="#">My accout</a></li>
+                <li><a href="#">Actors</a>
+                    <ul>
+                        <li><a href="#">Kirk Douglas</a></li>
+                        <li><a href="#">Audrey Hepburn</a></li>
+                        <li><a href="#">Marlon Brando</a></li>
+                        <li><a href="#">Marilyn Monroe</a></li>
+                        <li><a href="#">Clark Gable</a></li>
+                    </ul></li>
+                <li><a href="#">Movies</a>
+                    <ul>
+                        <li><a href="#">Breakfast at Tiffany's </a></li>
+                        <li><a href="#">Champion</a></li>
+                        <li><a href="#">The Godfather</a></li>
+                        <li><a href="#">The Misfits</a></li>
+                    </ul></li>
+                <li><a href="">About</a></li>
+                </ol>
+            </div>
     <div class="loginContainer">
       <form type="post" action="user">
         <input type="text" name="Login" value"" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'"/>
