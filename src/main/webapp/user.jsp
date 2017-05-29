@@ -20,7 +20,7 @@
     
       <div id="menu">
                 <ol>
-                <li><a href="/Project_Maggie_Kuba/">Home</a></li>
+                <li><a href="/Project_Maggie_Kuba/index2">Home</a></li>
                 <li><a href="#">My accout</a></li>
                 <li><a href="#">Actors</a>
                     <ul>

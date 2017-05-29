@@ -105,6 +105,16 @@
         <url-pattern>/editMovieServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Index2Template</servlet-name>
+        <jsp-file>/index2.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Index2Template</servlet-name>
+        <url-pattern>/index2</url-pattern>
+    </servlet-mapping>
+
 
 
 </web-app>

@@ -26,6 +26,7 @@ public class EditMovieServlet  extends HttpServlet {
                 req.getParameter("actorPlaceOfBirth"),req.getParameter("actorDeathPlace"),(Users) session.getAttribute("user"),
                 Integer.parseInt(req.getParameter("MovieNumber")));
 
+        session.setAttribute("baza", baza);
         session.setAttribute("user", baza.getUsers().get(baza.getUsers().indexOf(session.getAttribute("user"))));
         req.getRequestDispatcher("/user.jsp").forward(req, resp);
 

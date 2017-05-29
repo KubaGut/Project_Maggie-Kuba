@@ -26,6 +26,7 @@ public class AddMovieServlet extends HttpServlet {
                 req.getParameter("actorName"),req.getParameter("actorLastName"),req.getParameter("actorDateOfBirth"),
                 req.getParameter("actorPlaceOfBirth"),req.getParameter("actorDeathPlace"),(Users) session.getAttribute("user"));
 
+        session.setAttribute("baza", baza);
         session.setAttribute("user", baza.getUsers().get(baza.getUsers().indexOf(session.getAttribute("user"))));
         req.getRequestDispatcher("/user.jsp").forward(req, resp);
 
